@@ -1,0 +1,282 @@
+body{
+    margin: 0;
+    font: 12px;
+    background-color: #212121;
+}
+
+/* =================
+     Typography
+================= */
+
+input{
+    outline: none;
+    width: 35%;
+    background-color: #173b56;
+    color: white;
+    /* font-size: 14px;
+    padding: 10px .5em; */
+    border: none;
+    border-radius: 0 8px 8px 0;
+}
+a{
+    text-decoration: none;
+}
+/* =================
+       Layout
+================= */
+
+/* sidenavigation */
+
+.sidenav{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* top: 7.4em; */
+    padding: 0;
+    width: 3.3%;
+    min-height: 90%;
+    max-height: 100vh;
+    background-color: #212121;
+    color: white;
+    position: fixed;
+    overflow: auto;
+    text-align: center;
+    border: 1px solid #00000078;
+}
+.sidenav a{
+    color: white;
+}
+.sidenav ul{
+    padding: 0;
+    margin-top: 0;
+}
+.sidenav ul > li{
+    /* flex-grow: 1; */
+    padding: 1em 0;
+    list-style: none;
+    
+}
+.sidenav ul > li:hover{
+    background-color: #333;
+}
+
+/* Header */
+
+.Primary-menubar{
+    display: flex;
+    /* width: 100%; */
+    /* height: 5%; */
+    margin: auto;
+    background-color: #0078d4;
+    color: white;
+    border: 1px solid green;
+}
+.Primary-menubar > .menuicon-waper{
+    padding: 1em;
+}
+.Primary-menubar > .menuicon-waper:hover{
+    background-color: #212121a2;
+}
+.Primary-menubar > .menuicon-waper > img {
+    width: 18px;
+    height: 18px;
+}
+.Primary-menubar >h1{
+    margin: auto;
+    margin-left: .3em;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+.Primary-menubar > .menu-container{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.Primary-menubar  .menu-container  .menu{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    /* align-items: center; */
+    list-style: none;
+    
+}
+.menu > li {
+    background-color: inherit;
+    border: none;
+    color: white;
+    margin: 0;
+    padding: .7em 1em;
+    font-size: 18px;
+}
+.menu > li:hover {
+    background-color: #212121a2;
+}
+.Primary-menubar > .input-field{
+    display: flex;
+    /* margin: 1em 0; */
+    margin-left: 3.5em;
+    padding: .5em 0;
+    flex: 1 100px;
+}
+.input-field > .fa-search{
+   background-color: #173b56;
+   padding: .6em ;
+   border-radius: 8px 0 0 8px;
+}
+.menu .img-container{
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    margin-top: .2em;
+    margin-right: 1.5em;
+    box-shadow: 2px 0px #0000008a;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.img-container img{
+   margin: -1.1em;
+}
+.Secondary-menubar{
+    background-color: #212121;
+    border-bottom: 2px solid #00000078;
+    /* border: 1px solid yellow; */
+}
+.Secondary-menubar >ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.Secondary-menubar > ul > li{
+    list-style: none;
+    margin: 0 .5em;
+}
+.Secondary-menubar .blue-btn{
+    background-color: #69afe5;
+    color: white;
+    border: 1px;
+}
+.Secondary-menubar .blue-btn:hover{
+    background-color: #69afe569;
+}
+.Secondary-menubar  button {
+    padding: .4em ;
+    margin: .5em 0;
+    background-color: inherit;
+    color: #69afe5;
+    border: none;
+}
+.Secondary-menubar  button:hover {
+    background-color: #333;
+}
+
+/* container */
+
+.main-content{
+    top: 7.4em;
+    left: 25%;
+}
+.card-menu > ul > li .fa-check-circle-o{
+    /* margin: -25px; */
+    font-size: 22px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border: 2px solid #00000078;
+    margin: 0 .1em;
+    padding: 1em;
+}
+.card:hover{
+    background-color: #00000078;
+}
+.card .card-title{
+    display: flex;
+    margin-top: 1em;
+    margin-left: 1em;
+    /* flex-direction:column ; */
+}
+.card .card-title .selector{
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    margin-top: .2em;
+    margin-right: .5em;
+    box-shadow: 2px 0px #0000008a;
+    /* position: relative; */
+    /* overflow: hidden; */
+    border-radius: 50%
+}
+.card .card-title .selector:hover{
+    background-color: #333;
+    border: 1px solid #00000042;
+}
+.card:hover .card-title .selector{
+    background-color: #00000078;
+}
+.card-title .date-info{
+    float: right;
+    margin-top: .3em;
+    margin-left: 4em;
+}
+.card h4{
+    margin: 0 ;
+    margin-left: .5em;
+    font-size: 1.5em;
+    font-weight: 700;
+
+}
+.card .card-text h3,p{
+    margin: 0;
+}
+.card .card-text{
+    margin-top: .5em;
+    margin-left: 3.3em;
+}
+.sub-content{
+    width:30%;
+    height: 90%;
+    max-height: 100%;
+    position: fixed;
+    background-color: #333;
+    /* top: 7.4em; */
+    left: 3%;
+    z-index: -1;
+    border: 3px solid #00000078;
+    /* border: 1px solid orange; */
+}
+.sub-content .card-menu {
+    border: 2px solid #00000078;
+    margin: 0 .1em;
+}
+.sub-content .card-menu > ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.sub-content .card-menu > ul > li{
+    list-style: none;
+    color: white;
+    margin: 0;
+    margin-top: 10px;
+    padding: .5em;
+    
+}
+.sub-content .card-menu > ul > li:hover {
+    background-color: #00000078;
+}
+.sub-content .card-menu > ul > li.focused{
+    border-bottom: 2px solid blue;
+    transition: border-bottom 1s ease .5s;
+}
+/* .sub-content .card-menu > ul > li.focused:hover{
+    border-bottom: scale(1.3) solid blue;
+   
+}  */
+.sub-content .card-menu > ul > li.filter{
+   margin-left:auto;
+   margin-top: 10px;
+    
+}
